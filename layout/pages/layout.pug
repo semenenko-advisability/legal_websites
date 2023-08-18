@@ -1,0 +1,49 @@
+doctype html 
+html(lang="ru")
+    head 
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css')
+        link(rel='stylesheet' href='/assets/css/style.css')
+        title ИП Лагутенкова
+    body 
+        header.header 
+            .container-outer.header__container
+                .logo.header__logo
+                    a.logo__link(href='index.html')
+                        img.logo__image(src='/assets/images/icons/logo.svg' alt='')
+                .menu__icon
+                    span
+                    span
+                    span
+                nav.menu.header__menu
+                    ul.menu__list
+                        li.menu__item
+                            a.menu__link(href='about.html') Обо мне
+                        li.menu__item
+                            a.menu__link(href='blog.html') Блог
+                        li.menu__item
+                            a.menu__link(href='news.html') Новости
+        section.hero 
+            .container-outer 
+                .hero__banner
+                    h1.hero__title <strong>Digital</strong><br> Marketing Blog
+        section.intro-quote 
+            .container-outer.intro-quote__container 
+                .intro-quote__wrapper.intro-quote__wrapper-left 
+                    span.intro-quote__title.
+                        Меня зовут Наталья Лагутенкова,
+                        и я рада приветствовать вас в моем блоге.
+                    a.button.intro-quote__button(href="#") Подробнее
+                .intro-quote__wrapper.intro-quote__wrapper-right
+                    p.intro-quote__description. 
+                        Я являюсь кризисным менеджером и имею большой опыт
+                        в таких вертикалях, как iGaming, Betting, Finance и E-Com. 
+                        Закончила факультет психологии в Университете им. Герцена,
+                        а также получила дополнительное образование по направлению финансы, 
+                        экономика и управление предприятием.
+
+        footer
+        script(src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js")
+        script(src="assets/js/sliders.js")
+        script(src="assets/js/script.js")

@@ -1,0 +1,106 @@
+/* < --- INTRO --- > */
+
+.intro-quote {
+    padding: 80px 0;
+    @media (max-width: 500px) {
+        padding: 40px 0;
+    }
+    &__container {
+        display: grid;
+        max-width: 1096px;
+        // position: relative;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+        @media (max-width: 700px) {
+            grid-template-columns: 100%;
+            gap: 50px;
+        }
+        @media (max-width: 500px) {
+            gap: 40px;
+        }
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding-top: 160px;
+        @media (max-width: 800px) {
+            padding-top: 120px;
+        }
+        @media (max-width: 500px) {
+            padding-top: 80px;
+        }
+        &-left {
+            // font-size: 200px;
+            position: relative;
+            // padding-left: min(7.6vw, 110px);
+            padding-right: min(2.6vw, 110px);
+            gap: 45px;
+            @media (max-width: 1000px) {
+                padding-right: 0;
+            }
+            @media (max-width: 800px) {
+                gap: 30px;
+            }
+            &::before {
+                content: "“";
+                display: block;
+                position: absolute;
+                // width: 100px;
+                // left: min(7.6vw, 110px);
+                top: 0;
+                // height: 100px;
+                color: $text-accent;
+                font-size: 200px;
+                line-height: 1em;
+                font-weight: $black;
+                // background-color: red;
+                @media (max-width: 800px) {
+                    font-size: 150px;
+                }
+                @media (max-width: 500px) {
+                    font-size: 100px;
+                }
+            }
+        }
+        &-right {
+            // padding-right: min(7.6vw, 110px);
+            @media (max-width: 700px) {
+                padding-top: 0;
+            }
+        }
+    }
+    &__title {
+        font-size: 24px;
+        font-weight: $medium;
+        line-height: $line-height-3;
+        text-wrap: balance;
+        @media (max-width: 800px) {
+            font-size: $font-size-xl;
+        }
+        @media (max-width: 500px) {
+            font-size: $font-size-l;
+        }
+    }
+    &__description {
+        font-size: $font-size-l;
+        line-height: $line-height-4;
+        @media (max-width: 800px) {
+            font-size: $font-size-m;
+        }
+        @media (max-width: 500px) {
+            font-size: $font-size-s;
+        }
+    }
+    &__button {
+        font-size: $font-size-m;
+        line-height: $line-height-3;
+        padding: 10px 55px;
+        @media (max-width: 500px) {
+            font-size: $font-size-s;
+            padding: 10px 35px;
+        }
+    }
+}
+
+/* < ---/ INTRO /--- > */

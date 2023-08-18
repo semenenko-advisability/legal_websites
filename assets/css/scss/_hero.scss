@@ -1,0 +1,30 @@
+/* < --- HERO --- > */
+
+.hero {
+    padding: 45px 0;
+    &__banner {
+        background-image: url("/assets/images/img/hero.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 10px;
+        padding: 165px 105px;
+        @media (max-width: 800px) {
+            padding: 120px 70px;
+        }
+        @media (max-width: 500px) {
+            padding: 80px 30px;
+        }
+    }
+    &__title {
+        color: $text-light;
+        font-size: 60px;
+        @media (max-width: 800px) {
+            font-size: 40px;
+        }
+        @media (max-width: 500px) {
+            font-size: 30px;
+        }
+    }
+}
+/* < ---/ HERO /--- > */
