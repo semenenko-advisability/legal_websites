@@ -1,9 +1,9 @@
 /* < --- INTRO --- > */
 
 .intro-quote {
-    padding: 80px 0;
+    padding: 80px 0 100px 0;
     @media (max-width: 500px) {
-        padding: 40px 0;
+        padding: 40px 0 60px 0;
     }
     &__container {
         display: grid;

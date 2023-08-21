@@ -1,0 +1,30 @@
+/* < --- FOOTER --- > */
+
+.footer {
+    padding: 125px 0 55px 0;
+    @media (max-width: 800px) {
+        padding: 75px 0 20px 0;
+    }
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $button-dark;
+        border-radius: 20px;
+        padding: 80px min(6vw, 85px) 70px;
+        @media (max-width: 700px) {
+            padding: 50px min(6vw, 85px) 40px;
+        }
+        @media (max-width: 500px) {
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+    &__copyright {
+        color: $text-light;
+        line-height: $line-height-3;
+        font-size: $font-size-xs;
+    }
+}
+
+/* < ---/ FOOTER /--- > */
