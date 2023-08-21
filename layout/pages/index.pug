@@ -1,0 +1,85 @@
+extends ../layout.pug
+
+block content 
+    section.hero 
+        .container-outer 
+            .hero__banner
+                h1.hero__title <strong>Digital</strong><br> Marketing Blog
+    section.intro-quote 
+        .container-outer.intro-quote__container 
+            .intro-quote__wrapper.intro-quote__wrapper-left 
+                span.intro-quote__title.
+                    Меня зовут Наталья Лагутенкова,
+                    и я рада приветствовать вас в моем блоге.
+                a.button.intro-quote__button(href="about.html") Подробнее
+            .intro-quote__wrapper.intro-quote__wrapper-right
+                p.intro-quote__description. 
+                    Я являюсь кризисным менеджером и имею большой опыт
+                    в таких вертикалях, как iGaming, Betting, Finance и E-Com. 
+                    Закончила факультет психологии в Университете им. Герцена,
+                    а также получила дополнительное образование по направлению финансы, 
+                    экономика и управление предприятием.
+    section.blog
+        .container-outer.blog__container
+            h2.blog__title.section-title Блог
+            a.more.blog__more(href="blog.html") Читать все
+            .blog__swiper.swiper.blog-swiper
+                .swiper-wrapper
+                    .card.blog-item.swiper-slide
+                        a.blog-item__link(href="publication.html")
+                            img.blog-item__image(src="/assets/images/img/blog-1.png", alt="blog image")
+                            .blog-item__wrapper
+                                h3.blog-item__title Обзор сайта АКЦ
+                                p.blog-item__description. 
+                                    Сетевое издание “Обзор рынков” — это источник всесторонней бизнес-информации, 
+                                    предоставляющий наиболее актуальные данные в таких отраслях...
+                    .card.blog-item.swiper-slide
+                        a.blog-item__link(href="publication.html")
+                            img.blog-item__image(src="/assets/images/img/blog-2.png", alt="blog image")
+                            .blog-item__wrapper
+                                h3.blog-item__title Обзор сайта АКЦ
+                                p.blog-item__description. 
+                                    Сетевое издание “Обзор рынков” — это источник всесторонней бизнес-информации, 
+                                    предоставляющий наиболее актуальные данные в таких отраслях...
+                    .card.blog-item.swiper-slide
+                        a.blog-item__link(href="publication.html")
+                            img.blog-item__image(src="/assets/images/img/blog-3.png", alt="blog image")
+                            .blog-item__wrapper
+                                h3.blog-item__title Обзор сайта АКЦ
+                                p.blog-item__description. 
+                                    Сетевое издание “Обзор рынков” — это источник всесторонней бизнес-информации, 
+                                    предоставляющий наиболее актуальные данные в таких отраслях...
+                .swiper-pagination
+    section.blog
+        .container-outer.blog__container
+            h2.blog__title.section-title Новости
+            a.more.blog__more(href="news.html") Все новости
+            .blog__swiper.swiper.news-swiper
+                .swiper-wrapper
+                    .card.blog-item.swiper-slide
+                        a.blog-item__link(href="publication.html")
+                            img.blog-item__image(src="/assets/images/img/news-1.png", alt="blog image")
+                            .blog-item__wrapper
+                                h3.blog-item__title.
+                                    Букмекер выставил коэффициент
+                                    20,00 на то, что итальянские клубы
+                                    выиграют все еврокубки
+                                time.time.blog-item__time 10.05.2023
+                    .card.blog-item.swiper-slide
+                        a.blog-item__link(href="publication.html")
+                            img.blog-item__image(src="/assets/images/img/news-2.png", alt="blog image")
+                            .blog-item__wrapper
+                                h3.blog-item__title.
+                                    Игровые автоматы вновь появились
+                                    в торговых центрах и подземных
+                                    переходах Татарстана
+                                time.time.blog-item__time 02.05.2023
+                    .card.blog-item.swiper-slide
+                        a.blog-item__link(href="publication.html")
+                            img.blog-item__image(src="/assets/images/img/news-3.png", alt="blog image")
+                            .blog-item__wrapper
+                                h3.blog-item__title.
+                                    В России объём рынка киберспортивных
+                                    клубов достиг 20 миллиардов рублей
+                                time.time.blog-item__time 17.04.2023
+                .swiper-pagination
