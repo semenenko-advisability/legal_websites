@@ -362,10 +362,10 @@ h1.section-title {
 }
 .back::after {
   left: 0px;
-  background-image: url(/assets/images/icons/back-arrow.svg);
+  background-image: url(../../assets/images/icons/back-arrow.svg);
 }
 .back:hover::after {
-  background-image: url(/assets/images/icons/back-arrow-hover.svg);
+  background-image: url(../../assets/images/icons/back-arrow-hover.svg);
 }
 
 .more {
@@ -374,10 +374,10 @@ h1.section-title {
 .more::after {
   right: 0px;
   top: 50%;
-  background-image: url(/assets/images/icons/more-arrow.svg);
+  background-image: url(../../assets/images/icons/more-arrow.svg);
 }
 .more:hover::after {
-  background-image: url(/assets/images/icons/more-arrow-hover.svg);
+  background-image: url(../../assets/images/icons/more-arrow-hover.svg);
 }
 
 .logo {
@@ -411,27 +411,27 @@ h1.section-title {
 .pagination__prev {
   aspect-ratio: 1;
   font-size: 0;
-  background-image: url(/assets/images/icons/pagination-prev-arrow-light.svg);
+  background-image: url(../../assets/images/icons/pagination-prev-arrow-light.svg);
   background-position: center;
 }
 .pagination__prev_disabled {
   pointer-events: none;
   background-color: transparent;
-  background-image: url(/assets/images/icons/pagination-prev-arrow-dark.svg);
+  background-image: url(../../assets/images/icons/pagination-prev-arrow-dark.svg);
   border: 1px solid #282828;
 }
 .pagination__next {
   display: flex;
   align-items: center;
   padding: 0 42px 0 22px;
-  background-image: url(/assets/images/icons/pagination-next-arrow-light.svg);
+  background-image: url(../../assets/images/icons/pagination-next-arrow-light.svg);
   background-position: right 20px top 50%;
 }
 .pagination__next_disabled {
   pointer-events: none;
   background-color: transparent;
   color: #282828;
-  background-image: url(/assets/images/icons/pagination-next-arrow-dark.svg);
+  background-image: url(../../assets/images/icons/pagination-next-arrow-dark.svg);
   border: 1px solid #282828;
 }
 
@@ -587,7 +587,7 @@ h1.section-title {
   padding: 45px 0;
 }
 .hero__banner {
-  background-image: url("/assets/images/img/hero.png");
+  background-image: url("../../assets/images/img/hero.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1295,6 +1295,7 @@ h1.section-title {
 @media (max-width: 500px) {
   .about__subtitle {
     font-size: 14px;
+    text-align: center;
   }
 }
 .about__paragraph {

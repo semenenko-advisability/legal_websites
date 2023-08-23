@@ -241,11 +241,11 @@ h1.section-title {
     padding-left: 25px;
     &::after {
         left: 0px;
-        background-image: url(/assets/images/icons/back-arrow.svg);
+        background-image: url(../../assets/images/icons/back-arrow.svg);
     }
     &:hover {
         &::after {
-            background-image: url(/assets/images/icons/back-arrow-hover.svg);
+            background-image: url(../../assets/images/icons/back-arrow-hover.svg);
         }
     }
 }
@@ -254,11 +254,11 @@ h1.section-title {
     &::after {
         right: 0px;
         top: 50%;
-        background-image: url(/assets/images/icons/more-arrow.svg);
+        background-image: url(../../assets/images/icons/more-arrow.svg);
     }
     &:hover {
         &::after {
-            background-image: url(/assets/images/icons/more-arrow-hover.svg);
+            background-image: url(../../assets/images/icons/more-arrow-hover.svg);
         }
     }
 }
@@ -405,12 +405,12 @@ h1.section-title {
     &__prev {
         aspect-ratio: 1;
         font-size: 0;
-        background-image: url(/assets/images/icons/pagination-prev-arrow-light.svg);
+        background-image: url(../../assets/images/icons/pagination-prev-arrow-light.svg);
         background-position: center;
         &_disabled {
             pointer-events: none;
             background-color: transparent;
-            background-image: url(/assets/images/icons/pagination-prev-arrow-dark.svg);
+            background-image: url(../../assets/images/icons/pagination-prev-arrow-dark.svg);
             border: 1px solid $text-dark;
         }
     }
@@ -419,13 +419,13 @@ h1.section-title {
         align-items: center;
         padding: 0 42px 0 22px;
         // font-size: 0;
-        background-image: url(/assets/images/icons/pagination-next-arrow-light.svg);
+        background-image: url(../../assets/images/icons/pagination-next-arrow-light.svg);
         background-position: right 20px top 50%;
         &_disabled {
             pointer-events: none;
             background-color: transparent;
             color: $text-dark;
-            background-image: url(/assets/images/icons/pagination-next-arrow-dark.svg);
+            background-image: url(../../assets/images/icons/pagination-next-arrow-dark.svg);
             border: 1px solid $text-dark;
         }
     }
