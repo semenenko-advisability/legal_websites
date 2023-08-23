@@ -182,7 +182,7 @@ strong {
         font-size: 50px;
         @media (max-width: 800px) {
             font-size: 40px;
-            margin-bottom: 25px;
+            // margin-bottom: 25px;
         }
         @media (max-width: 500px) {
             font-size: 30px;
@@ -200,7 +200,7 @@ h1.section-title {
     font-size: 60px;
     @media (max-width: 800px) {
         font-size: 40px;
-        margin-bottom: 25px;
+        // margin-bottom: 25px;
     }
     @media (max-width: 500px) {
         font-size: 30px;
@@ -209,31 +209,52 @@ h1.section-title {
 }
 .more,
 .back {
+    display: inline-block;
     position: relative;
     font-size: $font-size-l;
     transition: color $transition;
-    padding-right: 25px;
     @media (max-width: 800px) {
         font-size: $font-size-m;
+    }
+    @media (max-width: 500px) {
+        display: block;
+        width: max-content;
+        margin: 0 auto;
     }
     &:hover {
         color: $accent-color;
     }
-}
-.more {
     &::after {
         content: "";
         position: absolute;
         display: block;
         width: 17px;
         height: 5px;
-        right: 0px;
         top: 50%;
         transform: translateY(-50%);
-        background-image: url(/assets/images/icons/more-arrow.svg);
         background-size: contain;
         background-repeat: no-repeat;
         transition: background-image $transition;
+    }
+}
+.back {
+    padding-left: 25px;
+    &::after {
+        left: 0px;
+        background-image: url(/assets/images/icons/back-arrow.svg);
+    }
+    &:hover {
+        &::after {
+            background-image: url(/assets/images/icons/back-arrow-hover.svg);
+        }
+    }
+}
+.more {
+    padding-right: 25px;
+    &::after {
+        right: 0px;
+        top: 50%;
+        background-image: url(/assets/images/icons/more-arrow.svg);
     }
     &:hover {
         &::after {
