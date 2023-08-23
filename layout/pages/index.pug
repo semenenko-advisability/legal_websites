@@ -5,20 +5,9 @@ block content
         .container-outer 
             .hero__banner
                 h1.hero__title <strong>Digital</strong><br> Marketing Blog
-    section.intro-quote 
-        .container-outer.intro-quote__container 
-            .intro-quote__wrapper.intro-quote__wrapper-left 
-                span.intro-quote__title.
-                    Меня зовут Наталья Лагутенкова,
-                    и я рада приветствовать вас в моем блоге.
-                a.button.intro-quote__button(href="about.html") Подробнее
-            .intro-quote__wrapper.intro-quote__wrapper-right
-                p.intro-quote__description. 
-                    Я являюсь кризисным менеджером и имею большой опыт
-                    в таких вертикалях, как iGaming, Betting, Finance и E-Com. 
-                    Закончила факультет психологии в Университете им. Герцена,
-                    а также получила дополнительное образование по направлению финансы, 
-                    экономика и управление предприятием.
     include ../includes/mixins
+    +intro('quote')
+    +intro('foto')
+    +intro
     +recent-posts('full')
     +recent-news('full')

@@ -1,10 +1,131 @@
 /* < --- INTRO --- > */
 
-.intro-quote {
+.intro {
     padding: 80px 0 100px 0;
     @media (max-width: 500px) {
         padding: 40px 0 60px 0;
     }
+    &__container {
+        text-align: center;
+    }
+    &__title {
+        font-size: 28px;
+        font-weight: $medium;
+        line-height: $line-height-2;
+        @media (max-width: 800px) {
+            font-size: 24px;
+        }
+        @media (max-width: 500px) {
+            font-size: $font-size-l;
+        }
+    }
+    &__description {
+        font-size: $font-size-l;
+        line-height: $line-height-4;
+        margin-top: $line-height-4;
+        @media (max-width: 800px) {
+            font-size: $font-size-m;
+        }
+        @media (max-width: 500px) {
+            font-size: $font-size-s;
+        }
+    }
+    &__button {
+        font-size: $font-size-m;
+        line-height: $line-height-3;
+        padding: 10px 55px;
+        margin-top: 60px;
+        @media (max-width: 800px) {
+            margin-top: 40px;
+        }
+        @media (max-width: 500px) {
+            font-size: $font-size-s;
+            padding: 10px 35px;
+            margin-top: 30px;
+        }
+    }
+}
+.intro-foto {
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        @media (max-width: 1000px) {
+            gap: 24px;
+        }
+        @media (max-width: 700px) {
+            grid-template-columns: 100%;
+            gap: 50px;
+        }
+        @media (max-width: 500px) {
+            gap: 40px;
+        }
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        &-left {
+            align-items: center;
+            justify-content: center;
+            @media (max-width: 700px) {
+                align-items: start;
+            }
+            @media (max-width: 500px) {
+                align-items: center;
+            }
+        }
+        &-right {
+            align-items: start;
+            padding-right: min(9vw, 135px);
+            @media (max-width: 1000px) {
+                padding-right: 0;
+            }
+        }
+    }
+    &__image {
+        width: 315px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        @media (max-width: 1000px) {
+            width: 280px;
+        }
+        @media (max-width: 500px) {
+            width: 240px;
+        }
+    }
+    &__title {
+        line-height: $line-height-3;
+        font-size: $font-size-l;
+        font-weight: $semibold;
+        @media (max-width: 500px) {
+            font-size: $font-size-m;
+        }
+    }
+    &__description {
+        line-height: $line-height-3;
+        font-size: $font-size-l;
+        margin-top: $line-height-3;
+        @media (max-width: 800px) {
+            font-size: $font-size-m;
+        }
+        @media (max-width: 500px) {
+            font-size: $font-size-s;
+        }
+    }
+    &__button {
+        font-size: $font-size-m;
+        line-height: $line-height-3;
+        padding: 10px 55px;
+        margin-top: 50px;
+        @media (max-width: 700px) {
+            margin-top: 30px;
+        }
+        @media (max-width: 500px) {
+            font-size: $font-size-s;
+            padding: 10px 35px;
+        }
+    }
+}
+.intro-quote {
     &__container {
         display: grid;
         max-width: 1096px;

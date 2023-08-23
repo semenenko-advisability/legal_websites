@@ -1,38 +1,9 @@
 extends ../layout.pug
 
 block content
-    section.about 
-        .container-outer 
-            h1.section-title.about__title #{title}
-            .about__layout
-                .about__content 
-                    img.about__image(src="/assets/images/img/about.png", alt="Фото-портрет")
-                    h2.about__subtitle Наталья Лагутенкова,<br> Кризисный Менеджер
-                    .about__text-wrapper 
-                        p.about__paragraph.
-                            Как профессионал в областях iGaming, Betting, Finance и E-Com, я здесь для того, 
-                            чтобы поделиться с вами своим обширным опытом, идеями и знаниями. На протяжении многих лет 
-                            я сталкивалась с бесчисленными испытаниями и невзгодами в этих динамично развивающихся отраслях, 
-                            оттачивая свои навыки и вооружаясь инструментами, позволяющими справиться с любым кризисом.
-                        p.about__paragraph.
-                            Я верю в силу обмена опытом, и в этом блоге вы найдете примеры
-                            из реальной жизни, истории успеха, интересные кейсы и немного юмора. 
-                            Я буду предоставлять исчерпывающие обзоры и анализ наиболее актуальных новостей и событий. 
-                            Кроме того, мой блог — не просто улица с односторонним движением. 
-                            Я поощряю обсуждения, мнения и вопросы от всех вас. 
-                            Вместе мы сможем создать динамичное сообщество единомышленников.
-                aside.about__form
-                    .form
-                        span.form__title Для связи<br> со мной
-                        form.contact-form.form__contact-form(action="")
-                            input.contact-form__name(type="text", placeholder="Ваше имя*", required)
-                            input.contact-form__email(type="email", placeholder="E-mail*", required)
-                            p.contact-form__textarea-wrapper
-                                textarea.contact-form__textarea(name="text", placeholder="Ваше сообщение*", required)
-                            label.contact-form__checkbox.check.text
-                                input.check__input.visually-hidden(type="checkbox", required, checked)
-                                span.check__box.
-                                By signing and clicking Submit, you affirm you have read and agree
-                                to the Privacy Policy and Terms of Use and want to receive news
-                            button.contact-form__button.button.button_accent(type="submit") Отправить
+    include ../includes/mixins
+    +about('sidebar-right', 'about.png')
+    +about('', 'about.png')
+    +about('sidebar-right')
+    +about
      
