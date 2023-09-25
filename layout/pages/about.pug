@@ -2,8 +2,123 @@ extends ../layout.pug
 
 block content
     include ../includes/mixins
-    +about('sidebar-right', 'about.png')
-    +about('', 'about.png')
-    +about('sidebar-right')
     +about
-     
+        .about__content 
+            +text
+        aside.about__sidebar(class={"about__sidebar-centered": order !== 'reverse'})
+            +subtitle('big', 'Для связи<br> со мной')
+            +form
+    +about('reverse')
+        .about__content 
+            +subtitle('big')
+            +text
+        aside.about__sidebar(class={"about__sidebar-centered": order !== 'reverse'})
+            +subtitle('big', 'Для связи<br> со мной')
+            +form
+    +about
+    +about('reverse')
+    +about
+        .about__content 
+            +foto('square')
+            +subtitle 
+            +text
+        aside.about__sidebar
+            +subtitle('big', 'Для связи<br> со мной')
+            +form
+    +about('reverse')
+        .about__content 
+            +foto('square')
+            +subtitle 
+            +text
+        aside.about__sidebar
+            +subtitle('big', 'Для связи<br> со мной')
+            +form
+    +about
+        .about__content 
+            +subtitle('big')
+            +foto('rect', 'about-rect.png')
+            +text
+        aside.about__sidebar
+            +subtitle('big', 'Для связи<br> со мной')
+            +form
+    +about('reverse')
+        .about__content 
+            +subtitle('big')
+            +foto('rect', 'about-rect.png')
+            +text
+        aside.about__sidebar
+            +subtitle('big', 'Для связи<br> со мной')
+            +form
+    +about('direct', 'banner')
+        .about__content 
+            +subtitle
+            +text
+        aside.about__sidebar
+            +subtitle('big', 'Для связи<br> со мной')
+            +form
+    +about('reverse', 'banner')
+        .about__content 
+            +subtitle
+            +text
+        aside.about__sidebar
+            +subtitle('big', 'Для связи<br> со мной')
+            +form
+    +about
+        .about__content 
+            +subtitle('big')
+            +text
+            +subtitle('big', 'Для связи со мной')
+            +form
+        aside.about__sidebar
+            +foto('vertical', 'about-vertical.png')
+    +about('reverse')
+        .about__content 
+            +subtitle('big')
+            +text
+            +subtitle('big', 'Для связи со мной')
+            +form
+        aside.about__sidebar
+            +foto('vertical', 'about-vertical.png')
+    +about('reverse', 'banner')
+        .about__content 
+            +subtitle('big')
+            +foto('rect', 'blog-3.png')
+            +text 
+                p.
+                    Как профессионал в областях iGaming, Betting, Finance и E-Com, я здесь для того, 
+                    чтобы поделиться с вами своим обширным опытом, идеями и знаниями. На протяжении многих лет 
+                    я сталкивалась с бесчисленными испытаниями и невзгодами в этих динамично развивающихся отраслях, 
+                    оттачивая свои навыки и вооружаясь инструментами, позволяющими справиться с любым кризисом.
+                +foto('rect', 'blog-1.png')
+                p.
+                    Я верю в силу обмена опытом, и в этом блоге вы найдете примеры
+                    из реальной жизни, истории успеха, интересные кейсы и немного юмора. 
+                    Я буду предоставлять исчерпывающие обзоры и анализ наиболее актуальных новостей и событий. 
+                    Кроме того, мой блог — не просто улица с односторонним движением. 
+                    Я поощряю обсуждения, мнения и вопросы от всех вас. 
+                    Вместе мы сможем создать динамичное сообщество единомышленников.
+                +subtitle('big', 'Обмен опытом')
+                +foto('square', 'about-2.png')
+                +foto('square', 'about.png')
+                p.
+                    Я верю в силу обмена опытом, и в этом блоге вы найдете примеры
+                    из реальной жизни, истории успеха, интересные кейсы и немного юмора. 
+                    Я буду предоставлять исчерпывающие обзоры и анализ наиболее актуальных новостей и событий. 
+                    Кроме того, мой блог — не просто улица с односторонним движением. 
+                    Я поощряю обсуждения, мнения и вопросы от всех вас. 
+                    Вместе мы сможем создать динамичное сообщество единомышленников.
+        aside.about__sidebar
+            +foto('vertical', 'about-2.png')
+            +subtitle('big', 'Для связи<br> со мной')
+            +form
+    //- +about('reverse')
+    //- +about('reverse', 'foto-square')
+    //- +about('reverse', 'foto-rect')
+    //- +about('reverse', 'foto-rect-wide')
+    //- +about('reverse', 'foto-rect-vertical')
+    //- +about('', 'foto-circle')
+    //- +about('', 'foto-square')
+    //- +about('', 'foto-rect')
+    //- +about('', 'foto-rect-wide')
+    //- +about('', 'foto-rect-vertical')
+    

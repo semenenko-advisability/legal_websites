@@ -8,22 +8,57 @@
     &__container {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        // align-items: center;
         background-color: $button-dark;
         border-radius: 20px;
         padding: 80px min(6vw, 85px) 70px;
         @media (max-width: 700px) {
             padding: 50px min(6vw, 85px) 40px;
-        }
-        @media (max-width: 500px) {
             flex-direction: column;
+            align-items: center;
             gap: 20px;
+        }
+        & > div {
+            display: flex;
+            @media (max-width: 700px) {
+                align-items: center;
+            }
+            &:first-child {
+                flex-direction: column;
+                max-width: 420px;
+            }
+            &:last-child {
+                display: flex;
+                align-items: end;
+            }
         }
     }
     &__copyright {
         color: $text-light;
         line-height: $line-height-3;
         font-size: $font-size-xs;
+        white-space: nowrap;
+    }
+    &__info {
+        color: $text-light;
+        font-size: $font-size-s;
+        line-height: $line-height-3;
+        text-wrap: balance;
+        margin-top: 1.7em;
+        @media (max-width: 800px) {
+            font-size: $font-size-xs;
+        }
+        @media (max-width: 700px) {
+            text-align: center;
+        }
+    }
+    &__eighteen {
+        color: $text-light;
+        font-size: 22px;
+        margin-left: 15px;
+        @media (max-width: 800px) {
+            font-size: 18px;
+        }
     }
 }
 

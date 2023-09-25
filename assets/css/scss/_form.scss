@@ -40,6 +40,9 @@
         //     // margin-bottom: 27px;
         // }
     }
+    &__contact-form {
+        margin-top: 35px;
+    }
     // &__description {
     //     font-size: $font-size-l;
     //     // font-weight: $light;
@@ -64,7 +67,7 @@
     width: min(100%, 422px);
     @media (max-width: 500px) {
         width: min(100%, 300px);
-        margin: 0 auto;
+        margin-inline: auto;
     }
     &__name,
     &__email,
@@ -97,12 +100,6 @@
     }
     &__name {
         font-size: $font-size-l;
-        margin-top: 45px;
-        // margin-bottom: 24px;
-        @media (max-width: 800px) {
-            // margin-bottom: 20px;
-            margin-top: 30px;
-        }
         @media (max-width: 700px) {
             font-size: $font-size-m;
         }
